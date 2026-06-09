@@ -1,0 +1,14 @@
+[0.030s] Invoking command in '/home/prhayogo/Documents/swerve/build/swerve_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/prhayogo/Documents/swerve/build/swerve_controller -- -j16 -l16
+[0.207s] [ 50%] [32mBuilding CXX object CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o[0m
+[2.179s] [01m[K/home/prhayogo/Documents/swerve/swerve_controller/src/cmd_vel_to_swerve.cpp:[m[K In member function ‘[01m[Kvoid CmdVelToSwerve::[01;32m[KcmdVelCallback[m[K(geometry_msgs::msg::Twist_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.179s] [01m[K/home/prhayogo/Documents/swerve/swerve_controller/src/cmd_vel_to_swerve.cpp:71:50:[m[K [01;31m[Kerror: [m[K‘[01m[Klast_angle_[m[K’ was not declared in this scope
+[2.180s]    71 |           double steer_change = std::abs(angle - [01;31m[Klast_angle_[m[K[i]);
+[2.180s]       |                                                  [01;31m[K^~~~~~~~~~~[m[K
+[2.184s] [01m[K/home/prhayogo/Documents/swerve/swerve_controller/src/cmd_vel_to_swerve.cpp:75:35:[m[K [01;31m[Kerror: [m[K‘[01m[Ksteer_msg[m[K’ was not declared in this scope; did you mean ‘[01m[Ksteer_pubs_[m[K’?
+[2.184s]    75 |           steer_pubs_[i]->publish([01;31m[Ksteer_msg[m[K);
+[2.184s]       |                                   [01;31m[K^~~~~~~~~[m[K
+[2.184s]       |                                   [32m[Ksteer_pubs_[m[K
+[4.059s] gmake[2]: *** [CMakeFiles/cmd_vel_to_swerve.dir/build.make:76: CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o] Error 1
+[4.059s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/cmd_vel_to_swerve.dir/all] Error 2
+[4.060s] gmake: *** [Makefile:146: all] Error 2
+[4.062s] Invoked command in '/home/prhayogo/Documents/swerve/build/swerve_controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/prhayogo/Documents/swerve/build/swerve_controller -- -j16 -l16

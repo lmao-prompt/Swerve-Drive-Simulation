@@ -1,0 +1,67 @@
+-- The C compiler identification is GNU 13.3.0
+-- The CXX compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: 
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Configured 'flake8' exclude dirs and/or files: 
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (1.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/prhayogo/Documents/swerve/build/swerve_controller
+[ 50%] [32mBuilding CXX object CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o[0m
+[100%] [32m[1mLinking CXX executable cmd_vel_to_swerve[0m
+[100%] Built target cmd_vel_to_swerve
+-- Install configuration: ""
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve
+-- Set non-toolchain portion of runtime path of "/home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve" to ""
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config/swerve_controllers.yaml
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch/swerve_launch.py
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/package_run_dependencies/swerve_controller
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/parent_prefix_path/swerve_controller
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.sh
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.sh
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.dsv
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.bash
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.sh
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.zsh
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.dsv
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.dsv
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/packages/swerve_controller
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig.cmake
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig-version.cmake
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.xml

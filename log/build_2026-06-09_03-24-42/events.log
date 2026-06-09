@@ -1,0 +1,168 @@
+[0.000000] (-) TimerEvent: {}
+[0.000174] (swerve_controller) JobQueued: {'identifier': 'swerve_controller', 'dependencies': OrderedDict()}
+[0.000354] (swerve_controller) JobStarted: {'identifier': 'swerve_controller'}
+[0.020934] (swerve_controller) JobProgress: {'identifier': 'swerve_controller', 'progress': 'cmake'}
+[0.022427] (swerve_controller) JobProgress: {'identifier': 'swerve_controller', 'progress': 'build'}
+[0.022979] (swerve_controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/prhayogo/Documents/swerve/build/swerve_controller', '--', '-j16', '-l16'], 'cwd': '/home/prhayogo/Documents/swerve/build/swerve_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'OFFLINE_ENV': '/opt/offline', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'prhayogo', 'LC_TIME': 'id_ID.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'AGENT': '1', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/prhayogo/Documents/maen_ws/install/micro_ros_agent/lib:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs/lib:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/offline/lib:', 'OPENCODE_PROCESS_ROLE': 'worker', 'HOME': '/home/prhayogo', 'CONDA_SHLVL': '0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '2680', 'SYSTEMD_EXEC_PID': '3199', 'OPENCODE_RUN_ID': 'c03717a5-6a07-4e88-9694-03e5a3c4c9eb', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_CONDA_ROOT': '/home/prhayogo/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '111248', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install:/home/prhayogo/Documents/maen_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'prhayogo', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:27837', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'prhayogo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'OPENCODE': '1', 'PATH': '/home/prhayogo/.opencode/bin:/home/prhayogo/miniconda3/condabin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/prhayogo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/prhayogo-ASUS-TUF-Gaming-A15-FA506NFR-FA506NFR:@/tmp/.ICE-unix/2991,unix/prhayogo-ASUS-TUF-Gaming-A15-FA506NFR-FA506NFR:/tmp/.ICE-unix/2991', 'INVOCATION_ID': 'b86389d4807540e18a7e322a3d9eaeff', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'OPENCODE_PID': '325664', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install/swerve_controller:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_agent:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/ekf_localization:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/prhayogo/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e4cfa006-59ed-40c7-b3a2-268260e61f67', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', '_CONDA_EXE': '/home/prhayogo/miniconda3/bin/conda', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/prhayogo/Documents/swerve/build/swerve_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/prhayogo/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install/swerve_controller:/home/prhayogo/Documents/maen_ws/install/micro_ros_agent:/home/prhayogo/Documents/maen_ws/install/ekf_localization:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy'}), 'shell': False}
+[0.099851] (-) TimerEvent: {}
+[0.106399] (swerve_controller) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.199940] (-) TimerEvent: {}
+[0.300115] (-) TimerEvent: {}
+[0.322446] (swerve_controller) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.366749] (swerve_controller) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.376243] (swerve_controller) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.389285] (swerve_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.400203] (-) TimerEvent: {}
+[0.403479] (swerve_controller) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.469084] (swerve_controller) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.471251] (swerve_controller) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500304] (-) TimerEvent: {}
+[0.542636] (swerve_controller) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.600402] (-) TimerEvent: {}
+[0.609162] (swerve_controller) StdoutLine: {'line': b'-- Found geometry_msgs: 5.3.7 (/opt/ros/jazzy/share/geometry_msgs/cmake)\n'}
+[0.654225] (swerve_controller) StdoutLine: {'line': b'-- Found nav_msgs: 5.3.7 (/opt/ros/jazzy/share/nav_msgs/cmake)\n'}
+[0.682184] (swerve_controller) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)\n'}
+[0.700493] (-) TimerEvent: {}
+[0.773954] (swerve_controller) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[0.775253] (swerve_controller) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.775389] (swerve_controller) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.775461] (swerve_controller) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.778017] (swerve_controller) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[0.778182] (swerve_controller) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[0.778498] (swerve_controller) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[0.778613] (swerve_controller) StdoutLine: {'line': b"-- Configured 'flake8' exclude dirs and/or files: \n"}
+[0.778979] (swerve_controller) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.779380] (swerve_controller) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[0.780142] (swerve_controller) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.780219] (swerve_controller) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.780588] (swerve_controller) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.783390] (swerve_controller) StdoutLine: {'line': b'-- Configuring done (0.7s)\n'}
+[0.800609] (-) TimerEvent: {}
+[0.803118] (swerve_controller) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[0.807336] (swerve_controller) StdoutLine: {'line': b'-- Build files have been written to: /home/prhayogo/Documents/swerve/build/swerve_controller\n'}
+[0.892263] (swerve_controller) StdoutLine: {'line': b'[ 50%] Building CXX object CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o\n'}
+[0.900708] (-) TimerEvent: {}
+[1.000877] (-) TimerEvent: {}
+[1.101043] (-) TimerEvent: {}
+[1.201210] (-) TimerEvent: {}
+[1.301380] (-) TimerEvent: {}
+[1.401567] (-) TimerEvent: {}
+[1.501750] (-) TimerEvent: {}
+[1.601933] (-) TimerEvent: {}
+[1.702118] (-) TimerEvent: {}
+[1.802305] (-) TimerEvent: {}
+[1.902494] (-) TimerEvent: {}
+[2.002714] (-) TimerEvent: {}
+[2.102919] (-) TimerEvent: {}
+[2.203127] (-) TimerEvent: {}
+[2.303311] (-) TimerEvent: {}
+[2.403495] (-) TimerEvent: {}
+[2.503740] (-) TimerEvent: {}
+[2.603954] (-) TimerEvent: {}
+[2.704139] (-) TimerEvent: {}
+[2.804322] (-) TimerEvent: {}
+[2.904526] (-) TimerEvent: {}
+[3.004743] (-) TimerEvent: {}
+[3.105020] (-) TimerEvent: {}
+[3.205226] (-) TimerEvent: {}
+[3.305420] (-) TimerEvent: {}
+[3.405610] (-) TimerEvent: {}
+[3.505795] (-) TimerEvent: {}
+[3.605977] (-) TimerEvent: {}
+[3.706164] (-) TimerEvent: {}
+[3.806346] (-) TimerEvent: {}
+[3.906540] (-) TimerEvent: {}
+[4.006770] (-) TimerEvent: {}
+[4.106965] (-) TimerEvent: {}
+[4.207166] (-) TimerEvent: {}
+[4.307346] (-) TimerEvent: {}
+[4.407543] (-) TimerEvent: {}
+[4.507733] (-) TimerEvent: {}
+[4.607918] (-) TimerEvent: {}
+[4.708125] (-) TimerEvent: {}
+[4.808324] (-) TimerEvent: {}
+[4.908548] (-) TimerEvent: {}
+[5.008747] (-) TimerEvent: {}
+[5.108957] (-) TimerEvent: {}
+[5.209164] (-) TimerEvent: {}
+[5.309384] (-) TimerEvent: {}
+[5.409610] (-) TimerEvent: {}
+[5.509799] (-) TimerEvent: {}
+[5.609979] (-) TimerEvent: {}
+[5.710175] (-) TimerEvent: {}
+[5.810398] (-) TimerEvent: {}
+[5.910936] (-) TimerEvent: {}
+[6.011151] (-) TimerEvent: {}
+[6.111370] (-) TimerEvent: {}
+[6.211575] (-) TimerEvent: {}
+[6.311757] (-) TimerEvent: {}
+[6.412070] (-) TimerEvent: {}
+[6.512268] (-) TimerEvent: {}
+[6.612471] (-) TimerEvent: {}
+[6.712686] (-) TimerEvent: {}
+[6.812885] (-) TimerEvent: {}
+[6.913077] (-) TimerEvent: {}
+[7.013280] (-) TimerEvent: {}
+[7.113468] (-) TimerEvent: {}
+[7.213742] (-) TimerEvent: {}
+[7.313943] (-) TimerEvent: {}
+[7.414181] (-) TimerEvent: {}
+[7.514382] (-) TimerEvent: {}
+[7.614631] (-) TimerEvent: {}
+[7.714821] (-) TimerEvent: {}
+[7.815011] (-) TimerEvent: {}
+[7.915216] (-) TimerEvent: {}
+[8.015399] (-) TimerEvent: {}
+[8.115617] (-) TimerEvent: {}
+[8.215816] (-) TimerEvent: {}
+[8.316020] (-) TimerEvent: {}
+[8.416198] (-) TimerEvent: {}
+[8.516386] (-) TimerEvent: {}
+[8.616736] (-) TimerEvent: {}
+[8.716923] (-) TimerEvent: {}
+[8.817098] (-) TimerEvent: {}
+[8.917280] (-) TimerEvent: {}
+[9.017611] (-) TimerEvent: {}
+[9.117815] (-) TimerEvent: {}
+[9.217997] (-) TimerEvent: {}
+[9.318182] (-) TimerEvent: {}
+[9.418405] (-) TimerEvent: {}
+[9.518631] (-) TimerEvent: {}
+[9.618836] (-) TimerEvent: {}
+[9.699779] (swerve_controller) StdoutLine: {'line': b'[100%] Linking CXX executable cmd_vel_to_swerve\n'}
+[9.718955] (-) TimerEvent: {}
+[9.819124] (-) TimerEvent: {}
+[9.919361] (-) TimerEvent: {}
+[10.019557] (-) TimerEvent: {}
+[10.119767] (-) TimerEvent: {}
+[10.164515] (swerve_controller) StdoutLine: {'line': b'[100%] Built target cmd_vel_to_swerve\n'}
+[10.177919] (swerve_controller) CommandEnded: {'returncode': 0}
+[10.179434] (swerve_controller) JobProgress: {'identifier': 'swerve_controller', 'progress': 'install'}
+[10.192247] (swerve_controller) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/prhayogo/Documents/swerve/build/swerve_controller'], 'cwd': '/home/prhayogo/Documents/swerve/build/swerve_controller', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'OFFLINE_ENV': '/opt/offline', 'GZ_SIM_RESOURCE_PATH': '/opt/ros/jazzy/share', 'USER': 'prhayogo', 'LC_TIME': 'id_ID.UTF-8', 'GZ_CONFIG_PATH': '/opt/ros/jazzy/opt/gz_sim_vendor/share/gz:/opt/ros/jazzy/opt/sdformat_vendor/share/gz:/opt/ros/jazzy/opt/gz_gui_vendor/share/gz:/opt/ros/jazzy/opt/gz_transport_vendor/share/gz:/opt/ros/jazzy/opt/gz_rendering_vendor/share/gz:/opt/ros/jazzy/opt/gz_plugin_vendor/share/gz:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/share/gz:/opt/ros/jazzy/opt/gz_msgs_vendor/share/gz:/opt/ros/jazzy/opt/gz_common_vendor/share/gz', 'AGENT': '1', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/prhayogo/Documents/maen_ws/install/micro_ros_agent/lib:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs/lib:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs/lib:/opt/ros/jazzy/opt/gz_sim_vendor/lib:/opt/ros/jazzy/opt/gz_sensors_vendor/lib:/opt/ros/jazzy/opt/gz_physics_vendor/lib:/opt/ros/jazzy/opt/sdformat_vendor/lib:/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_gui_vendor/lib:/opt/ros/jazzy/opt/gz_transport_vendor/lib:/opt/ros/jazzy/opt/gz_rendering_vendor/lib:/opt/ros/jazzy/opt/gz_plugin_vendor/lib:/opt/ros/jazzy/opt/gz_fuel_tools_vendor/lib:/opt/ros/jazzy/opt/gz_msgs_vendor/lib:/opt/ros/jazzy/opt/gz_common_vendor/lib:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_tools_vendor/lib:/opt/ros/jazzy/opt/gz_ogre_next_vendor/lib:/opt/ros/jazzy/opt/gz_dartsim_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib:/opt/offline/lib:', 'OPENCODE_PROCESS_ROLE': 'worker', 'HOME': '/home/prhayogo', 'CONDA_SHLVL': '0', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'id_ID.UTF-8', 'MANAGERPID': '2680', 'SYSTEMD_EXEC_PID': '3199', 'OPENCODE_RUN_ID': 'c03717a5-6a07-4e88-9694-03e5a3c4c9eb', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', '_CE_M': '', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', '_CONDA_ROOT': '/home/prhayogo/miniconda3', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '111248', 'GNOME_KEYRING_CONTROL': '/run/user/1000/keyring', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'COLCON_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install:/home/prhayogo/Documents/maen_ws/install', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'prhayogo', '_': '/usr/bin/colcon', 'JOURNAL_STREAM': '8:27837', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/session.slice/org.gnome.SettingsDaemon.MediaKeys.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'prhayogo', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', '_CE_CONDA': '', 'WINDOWPATH': '2', 'OPENCODE': '1', 'PATH': '/home/prhayogo/.opencode/bin:/home/prhayogo/miniconda3/condabin:/opt/ros/jazzy/opt/gz_msgs_vendor/bin:/opt/ros/jazzy/opt/gz_tools_vendor/bin:/opt/ros/jazzy/opt/gz_ogre_next_vendor/bin:/opt/ros/jazzy/bin:/home/prhayogo/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/prhayogo-ASUS-TUF-Gaming-A15-FA506NFR-FA506NFR:@/tmp/.ICE-unix/2991,unix/prhayogo-ASUS-TUF-Gaming-A15-FA506NFR-FA506NFR:/tmp/.ICE-unix/2991', 'INVOCATION_ID': 'b86389d4807540e18a7e322a3d9eaeff', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'id_ID.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'OPENCODE_PID': '325664', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'id_ID.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install/swerve_controller:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_agent:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/ekf_localization:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy', 'CONDA_PYTHON_EXE': '/home/prhayogo/miniconda3/bin/python', 'SHELL': '/bin/bash', 'LC_NAME': 'id_ID.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:e4cfa006-59ed-40c7-b3a2-268260e61f67', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'id_ID.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', '_CONDA_EXE': '/home/prhayogo/miniconda3/bin/conda', 'LC_IDENTIFICATION': 'id_ID.UTF-8', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/prhayogo/Documents/swerve/build/swerve_controller', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'CONDA_EXE': '/home/prhayogo/miniconda3/bin/conda', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs/lib/python3.12/site-packages:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs/lib/python3.12/site-packages:/opt/ros/jazzy/lib/python3.12/site-packages', 'LC_NUMERIC': 'id_ID.UTF-8', 'LC_PAPER': 'id_ID.UTF-8', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/home/prhayogo/Documents/swerve/install/swerve_controller:/home/prhayogo/Documents/maen_ws/install/micro_ros_agent:/home/prhayogo/Documents/maen_ws/install/ekf_localization:/opt/ros/jazzy/opt/gz_sim_vendor:/opt/ros/jazzy/opt/gz_sensors_vendor:/opt/ros/jazzy/opt/gz_physics_vendor:/opt/ros/jazzy/opt/sdformat_vendor:/opt/ros/jazzy/opt/gz_gui_vendor:/opt/ros/jazzy/opt/gz_transport_vendor:/opt/ros/jazzy/opt/gz_rendering_vendor:/opt/ros/jazzy/opt/gz_plugin_vendor:/opt/ros/jazzy/opt/gz_fuel_tools_vendor:/opt/ros/jazzy/opt/gz_msgs_vendor:/opt/ros/jazzy/opt/gz_common_vendor:/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_tools_vendor:/opt/ros/jazzy/opt/gz_ogre_next_vendor:/opt/ros/jazzy/opt/gz_dartsim_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/home/prhayogo/Documents/maen_ws/install/micro_ros_setup:/home/prhayogo/Documents/maen_ws/install/micro_ros_msgs:/home/prhayogo/Documents/maen_ws/install/drive_base_msgs:/opt/ros/jazzy'}), 'shell': False}
+[10.204456] (swerve_controller) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.209806] (swerve_controller) StdoutLine: {'line': b'-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve\n'}
+[10.219857] (-) TimerEvent: {}
+[10.222684] (swerve_controller) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve" to ""\n'}
+[10.222941] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config\n'}
+[10.223523] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config/swerve_controllers.yaml\n'}
+[10.223812] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch\n'}
+[10.223924] (swerve_controller) StdoutLine: {'line': b'-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch/swerve_launch.py\n'}
+[10.231555] (swerve_controller) StdoutLine: {'line': b'-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/package_run_dependencies/swerve_controller\n'}
+[10.232183] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/parent_prefix_path/swerve_controller\n'}
+[10.251654] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.sh\n'}
+[10.251844] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.dsv\n'}
+[10.251952] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.sh\n'}
+[10.252042] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.dsv\n'}
+[10.252131] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.bash\n'}
+[10.252216] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.sh\n'}
+[10.252300] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.zsh\n'}
+[10.252382] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.dsv\n'}
+[10.252465] (swerve_controller) StdoutLine: {'line': b'-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.dsv\n'}
+[10.256795] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/packages/swerve_controller\n'}
+[10.257048] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig.cmake\n'}
+[10.257212] (swerve_controller) StdoutLine: {'line': b'-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig-version.cmake\n'}
+[10.257303] (swerve_controller) StdoutLine: {'line': b'-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.xml\n'}
+[10.263042] (swerve_controller) CommandEnded: {'returncode': 0}
+[10.319939] (-) TimerEvent: {}
+[10.371939] (swerve_controller) JobEnded: {'identifier': 'swerve_controller', 'rc': 0}
+[10.373450] (-) EventReactorShutdown: {}

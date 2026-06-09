@@ -1,0 +1,29 @@
+[0.022s] Invoking command in '/home/prhayogo/Documents/swerve/build/swerve_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/prhayogo/Documents/swerve/build/swerve_controller -- -j16 -l16
+[0.201s] [ 50%] Building CXX object CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o
+[11.803s] [100%] Linking CXX executable cmd_vel_to_swerve
+[12.353s] [100%] Built target cmd_vel_to_swerve
+[12.372s] Invoked command in '/home/prhayogo/Documents/swerve/build/swerve_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/prhayogo/Documents/swerve/build/swerve_controller -- -j16 -l16
+[12.390s] Invoking command in '/home/prhayogo/Documents/swerve/build/swerve_controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/prhayogo/Documents/swerve/build/swerve_controller
+[12.402s] -- Install configuration: ""
+[12.405s] -- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve
+[12.417s] -- Set non-toolchain portion of runtime path of "/home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve" to ""
+[12.418s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config
+[12.419s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config/swerve_controllers.yaml
+[12.419s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch
+[12.419s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch/swerve_launch.py
+[12.419s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/package_run_dependencies/swerve_controller
+[12.420s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/parent_prefix_path/swerve_controller
+[12.422s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.sh
+[12.422s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.dsv
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.sh
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.dsv
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.bash
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.sh
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.zsh
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.dsv
+[12.423s] -- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.dsv
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/packages/swerve_controller
+[12.423s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig.cmake
+[12.424s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig-version.cmake
+[12.424s] -- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.xml
+[12.426s] Invoked command in '/home/prhayogo/Documents/swerve/build/swerve_controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/prhayogo/Documents/swerve/build/swerve_controller

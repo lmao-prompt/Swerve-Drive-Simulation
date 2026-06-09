@@ -1,0 +1,412 @@
+<?xml version="1.0" ?>
+<sdf version="1.9">
+  <world name="swerve_world">
+
+    <!-- Physics -->
+    <physics name="1ms" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1.0</real_time_factor>
+    </physics>
+
+    <!-- Required plugins -->
+    <plugin filename="gz-sim-physics-system"
+            name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-scene-broadcaster-system"
+            name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-user-commands-system"
+            name="gz::sim::systems::UserCommands"/>
+
+    <!-- Lighting -->
+    <light name="sun" type="directional">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <direction>-0.5 0.1 -0.9</direction>
+    </light>
+
+    <!-- Ground plane -->
+    <model name="ground_plane">
+      <static>true</static>
+      <link name="link">
+        <collision name="collision">
+          <geometry><plane><normal>0 0 1</normal></plane></geometry>
+          <surface>
+            <friction><ode><mu>1</mu><mu2>1</mu2></ode></friction>
+          </surface>
+        </collision>
+        <visual name="visual">
+          <geometry><plane><normal>0 0 1</normal><size>100 100</size></plane></geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+  <model name="three_wheel_swerve">
+    <pose>0 0 0.13 0 0 0</pose>
+
+    <!-- ==================== BASE LINK ==================== -->
+    <link name="base_link">
+      <inertial>
+        <pose>0 0 0 0 0 0</pose>
+        <mass>15.0</mass>
+        <inertia>
+          <ixx>0.3375</ixx> <ixy>0</ixy> <ixz>0</ixz>
+          <iyy>0.3375</iyy> <iyz>0</iyz>
+          <izz>0.675</izz>
+        </inertia>
+      </inertial>
+      <visual name="chassis_visual">
+        <geometry>
+          <cylinder>
+            <radius>0.3</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.1 0.1 0.1 1.0</ambient>
+          <diffuse>0.1 0.1 0.1 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="chassis_collision">
+        <geometry>
+          <cylinder>
+            <radius>0.3</radius>
+            <length>0.05</length>
+          </cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <!-- ==================== MODULE 1 (front, 0 deg) ==================== -->
+    <link name="steer_link_1">
+      <pose>0.3 0 -0.025 0 0 0</pose>
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.00215</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.00215</iyy><iyz>0</iyz>
+          <izz>0.0027</izz>
+        </inertia>
+      </inertial>
+      <visual name="steer_1_visual">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1.0</ambient>
+          <diffuse>0.8 0.1 0.1 1.0</diffuse>
+        </material>
+      </visual>
+      <!-- FIX #1: tambah collision di steer_link -->
+      <collision name="steer_1_collision">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wheel_link_1">
+      <pose>0.3 0 -0.065 1.5708 0 0</pose>
+      <inertial>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.0006</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.0006</iyy><iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="wheel_1_visual">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1.0</ambient>
+          <diffuse>0.3 0.3 0.3 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="wheel_1_collision">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <!-- FIX #2: joint limits + dynamics + expressed_in model frame -->
+    <joint name="steer_joint_1" type="revolute">
+      <parent>base_link</parent>
+      <child>steer_link_1</child>
+      <axis>
+        <xyz expressed_in="__model__">0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>10.0</effort>
+          <velocity>5.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- FIX #3: wheel axis expressed_in model frame supaya arah putar bener -->
+    <joint name="wheel_joint_1" type="revolute">
+      <parent>steer_link_1</parent>
+      <child>wheel_link_1</child>
+      <axis>
+        <xyz expressed_in="__model__">0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+          <effort>10.0</effort>
+          <velocity>20.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.05</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== MODULE 2 (120 deg) ==================== -->
+    <link name="steer_link_2">
+      <pose>-0.15 0.2598 -0.025 0 0 0</pose>
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.00215</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.00215</iyy><iyz>0</iyz>
+          <izz>0.0027</izz>
+        </inertia>
+      </inertial>
+      <visual name="steer_2_visual">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1.0</ambient>
+          <diffuse>0.8 0.1 0.1 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="steer_2_collision">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wheel_link_2">
+      <pose>-0.15 0.2598 -0.065 1.5708 0 0</pose>
+      <inertial>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.0006</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.0006</iyy><iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="wheel_2_visual">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1.0</ambient>
+          <diffuse>0.3 0.3 0.3 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="wheel_2_collision">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="steer_joint_2" type="revolute">
+      <parent>base_link</parent>
+      <child>steer_link_2</child>
+      <axis>
+        <xyz expressed_in="__model__">0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>10.0</effort>
+          <velocity>5.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <joint name="wheel_joint_2" type="revolute">
+      <parent>steer_link_2</parent>
+      <child>wheel_link_2</child>
+      <axis>
+        <xyz expressed_in="__model__">0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+          <effort>10.0</effort>
+          <velocity>20.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.05</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== MODULE 3 (240 deg) ==================== -->
+    <link name="steer_link_3">
+      <pose>-0.15 -0.2598 -0.025 0 0 0</pose>
+      <inertial>
+        <mass>1.5</mass>
+        <inertia>
+          <ixx>0.00215</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.00215</iyy><iyz>0</iyz>
+          <izz>0.0027</izz>
+        </inertia>
+      </inertial>
+      <visual name="steer_3_visual">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.8 0.1 0.1 1.0</ambient>
+          <diffuse>0.8 0.1 0.1 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="steer_3_collision">
+        <geometry>
+          <cylinder><radius>0.06</radius><length>0.08</length></cylinder>
+        </geometry>
+      </collision>
+    </link>
+
+    <link name="wheel_link_3">
+      <pose>-0.15 -0.2598 -0.065 1.5708 0 0</pose>
+      <inertial>
+        <mass>0.8</mass>
+        <inertia>
+          <ixx>0.0006</ixx><ixy>0</ixy><ixz>0</ixz>
+          <iyy>0.0006</iyy><iyz>0</iyz>
+          <izz>0.001</izz>
+        </inertia>
+      </inertial>
+      <visual name="wheel_3_visual">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <material>
+          <ambient>0.3 0.3 0.3 1.0</ambient>
+          <diffuse>0.3 0.3 0.3 1.0</diffuse>
+        </material>
+      </visual>
+      <collision name="wheel_3_collision">
+        <geometry>
+          <cylinder><radius>0.05</radius><length>0.04</length></cylinder>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>1.0</mu>
+              <mu2>1.0</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+    </link>
+
+    <joint name="steer_joint_3" type="revolute">
+      <parent>base_link</parent>
+      <child>steer_link_3</child>
+      <axis>
+        <xyz expressed_in="__model__">0 0 1</xyz>
+        <limit>
+          <lower>-3.14159</lower>
+          <upper>3.14159</upper>
+          <effort>10.0</effort>
+          <velocity>5.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.1</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <joint name="wheel_joint_3" type="revolute">
+      <parent>steer_link_3</parent>
+      <child>wheel_link_3</child>
+      <axis>
+        <xyz expressed_in="__model__">0 1 0</xyz>
+        <limit>
+          <lower>-1e16</lower>
+          <upper>1e16</upper>
+          <effort>10.0</effort>
+          <velocity>20.0</velocity>
+        </limit>
+        <dynamics>
+          <damping>0.05</damping>
+          <friction>0.01</friction>
+        </dynamics>
+      </axis>
+    </joint>
+
+    <!-- ==================== GAZEBO PLUGINS (direct control) ==================== -->
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>steer_joint_1</joint_name>
+      <topic>/model/three_wheel_swerve/joint/steer_joint_1/cmd_pos</topic>
+      <p_gain>5</p_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+      <joint_name>wheel_joint_1</joint_name>
+      <topic>/model/three_wheel_swerve/joint/wheel_joint_1/cmd_vel</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>steer_joint_2</joint_name>
+      <topic>/model/three_wheel_swerve/joint/steer_joint_2/cmd_pos</topic>
+      <p_gain>5</p_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+      <joint_name>wheel_joint_2</joint_name>
+      <topic>/model/three_wheel_swerve/joint/wheel_joint_2/cmd_vel</topic>
+    </plugin>
+
+    <plugin filename="gz-sim-joint-position-controller-system" name="gz::sim::systems::JointPositionController">
+      <joint_name>steer_joint_3</joint_name>
+      <topic>/model/three_wheel_swerve/joint/steer_joint_3/cmd_pos</topic>
+      <p_gain>5</p_gain>
+    </plugin>
+    <plugin filename="gz-sim-joint-controller-system" name="gz::sim::systems::JointController">
+      <joint_name>wheel_joint_3</joint_name>
+      <topic>/model/three_wheel_swerve/joint/wheel_joint_3/cmd_vel</topic>
+    </plugin>
+
+  </model>
+
+  </world>
+</sdf>

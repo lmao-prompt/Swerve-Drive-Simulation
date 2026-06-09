@@ -1,0 +1,25 @@
+[ 50%] Building CXX object CMakeFiles/cmd_vel_to_swerve.dir/src/cmd_vel_to_swerve.cpp.o
+[100%] Linking CXX executable cmd_vel_to_swerve
+[100%] Built target cmd_vel_to_swerve
+-- Install configuration: ""
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve
+-- Set non-toolchain portion of runtime path of "/home/prhayogo/Documents/swerve/install/swerve_controller/lib/swerve_controller/cmd_vel_to_swerve" to ""
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/config/swerve_controllers.yaml
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/launch/swerve_launch.py
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/package_run_dependencies/swerve_controller
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/parent_prefix_path/swerve_controller
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.sh
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/environment/path.dsv
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.bash
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.sh
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.zsh
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/local_setup.dsv
+-- Installing: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.dsv
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/ament_index/resource_index/packages/swerve_controller
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig.cmake
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/cmake/swerve_controllerConfig-version.cmake
+-- Up-to-date: /home/prhayogo/Documents/swerve/install/swerve_controller/share/swerve_controller/package.xml
