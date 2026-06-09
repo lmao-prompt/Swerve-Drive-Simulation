@@ -31,5 +31,5 @@ ros2 run ros_gz_bridge parameter_bridge \
 
 #5. test
 ros2 topic pub /cmd_vel geometry_msgs/msg/Twist "{linear: {x: 0.5, y: -0.5, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
-or u can use teleop
+#or u can use teleop
 ros2 run teleop_twist_keyboard teleop_twist_keyboard 
